@@ -1,0 +1,665 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto+Mono&display=swap');
+body {  
+background-size: cover;  
+font-family: sans-serif;  
+margin: 0%;
+/* font-family: 'Poppins', sans-serif; */
+font-family: 'Roboto Mono', monospace;
+min-height: 100vh;
+box-sizing: border-box;
+background-color: #e7e7d3;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}  
+/* Screen Medial query */
+@media only screen and (max-width: 700px) {
+    .container, .banner {
+        flex-direction: column;
+        font-size: 10px;
+        background-position: center; 
+        width: 100%; 
+    }
+    .details {
+        flex-direction: column;
+        margin: 5vh;
+    }
+    .operations, .solutions {
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    column-gap: 2em;
+    gap: 3.125rem;
+    align-items: center;
+    margin-left: -3rem;
+    }
+    .op h1 {
+        text-align: center;
+        font-size: 30px; 
+    }
+    .solutions {
+        margin-top: 1rem;
+        
+    }
+    .services, .history {
+        margin-top: 2rem;
+    }
+    .join, .supply {
+       margin-top: 4rem;
+       width: 5px;
+       height: 5px;
+       margin-left: -5rem;
+       padding-top: 10rem;
+    }
+    .supply p{
+        margin-top: -7rem;
+    }
+    .join p {
+        margin-top: -7rem;
+    }
+    .noc {
+        height: 50px;
+        font-size: 10px;
+    }
+    .noc-txt h1 {
+        text-align: center;
+        margin: -1rem;
+        padding: 2rem;
+    }
+    .noc-txt p{
+        font-size: 1rem;
+        text-align: justify;
+        margin: 1rem;
+    }
+    .contact-body .cont {
+        margin: 5rem 0rem 1rem -2rem;
+        align-items: center;
+        width:400px;
+    }
+    .map {
+        width: 480px;
+
+    }
+    .ceo .president {
+        flex-direction: column;
+        display: flexbox;
+    }
+    .nav-bar{
+        flex-direction: column;
+    }
+    #toggle-button{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+    .page li{
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+        color: white;
+       
+    }
+    li a{
+        color: #fff;
+        text-align: center;
+        margin-left: -5rem;
+    }
+    .page {
+        background-color: #658864;
+        text-align: center;
+        padding: 1rem 0rem 0.1rem 3rem; 
+        display: none;
+        width: 500px;
+    }
+    .active{
+        display: block;
+    }
+    .colocation, .Lease, .billborad{
+        flex-direction: column;
+    }
+    .par{
+        padding-top:18rem;
+    }
+    .oper-para {
+        font-size: 1rem;
+        text-align: left;
+        height:80px;
+        font-size: 10px;
+        width: 400px;
+        align-items: center;
+    }
+    .Career-para{
+        font-size: 1rem;
+        text-align: left;
+        height:80px;
+        font-size: 10px;
+        width: 400px;
+        align-items: center;
+    }
+    .oper h1{
+        font-size: 40px;
+        text-align: justify;
+        padding-top: 8rem;
+    }
+    .career-path h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+    .Our-Company{
+        padding-left: left -50rem;;
+    }
+    .social, li, a{
+        padding-left: 3rem;
+    }
+    .social li a :hover{
+        border-bottom: none;
+    }
+}
+nav {  
+background-color: rgb(255, 255, 254); 
+left: 0;  
+right: 0;  
+top: 5px;  
+height: 65px;  
+display: flex;
+justify-content: space-between;
+align-items: center;  
+position: fixed;
+box-shadow: 0 0 25px 0 black;  
+}
+/* menu-toggle */
+.menu{
+    display: none;
+}
+.menu-line {
+    height:3px;
+    width: 20px;
+   background-color: #000000;
+   margin-bottom: 4px;
+   cursor: pointer;
+}  
+/* menu-toggle end */
+.logo {
+display: flex;
+align-items: center;
+}
+li {  
+display: inline;
+align-items: center;
+width: 90vw;
+}  
+nav li {  
+margin: 30px;  
+}  
+a {  
+color: #658864;  
+text-decoration: none;  
+font-weight: bolder;
+font-size: larger;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+} 
+
+ li :hover{
+    border-bottom:solid #B7B78A;
+    transition: ease-in;
+}
+.logo {
+    padding-left: 3rem;
+} 
+.page {
+    justify-content: space-around;
+} 
+.container {
+    background-image: url('/image/Banner-1.jpg');
+   background-size: cover;
+   width: 100%;
+   height: 610px;
+   background-position: center;
+   padding-top: 10em;
+   columns: 1 450px;
+   column-gap: 2em;
+   justify-content: flex-start;
+   gap: 3.125rem;
+}
+.head {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 250%;
+    text-align: justify;
+    padding: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.247);
+}
+button {
+    background: transparent;
+    color: white;
+    margin-top: 2.5em;
+    margin-left: 5em;
+    padding: .2em;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    border-radius: 5px;
+    border-color: #B7B78A;
+    border:solid 4px;
+    cursor: pointer;
+}
+button:hover{
+    color: #658864;
+    background-color: #fff;
+}
+.details {
+    column-rule: 2px solid #658864;
+    min-height: auto;
+    columns: 2 350px;
+    column-gap: 2em;
+    margin: 5rem;
+    /* text-align: left; */
+}
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+}
+.operations {
+    background-image: url('/image/how\ we\ operate.jpg');
+    background-size: cover;
+    padding: 15rem 3rem 2rem 3rem;
+    background-repeat: no-repeat;
+    color: white;
+    break-inside: avoid-column;
+    border-radius: 10px;   
+}
+.btn-sec {
+    background-color: white;
+    color: #658864;
+    font-size: 1.1em;
+    margin: 0;
+    padding: -2rem 1rem -2rem 1rem;
+    border-radius: 25px;
+    border-color: #EE2E31;
+
+}
+.btn-sec:hover{
+    border-bottom: none;
+    font-weight: 900;
+    
+}
+
+.solutions {
+    background-image: url(/image/Solutions.jpg);
+    background-size: cover;
+    padding: 15rem 3rem 2rem 3rem;
+    background-repeat: no-repeat;
+    color: white;
+    break-inside: avoid-column;
+    border-radius: 10px;
+    
+}
+
+.Our-Company {
+    columns: 3 350px;
+    column-gap: 2em;
+    margin: 2rem;
+   /* display: flex; */
+}
+.Our-Strategy {
+    background-image: url('/image/Stra.jpg');
+    background-size: cover;
+    padding: 15rem 1rem 2rem 1rem;
+    background-repeat: no-repeat;
+    color: white;
+    break-inside: avoid-column;
+    text-align: left;
+    background-position: center;
+    
+}
+.services {
+    background-image: url('/image/services.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 15rem 1rem 2rem 1rem;
+    background-repeat: no-repeat;
+    color: white;
+    break-inside: avoid-column;
+    text-align: left;
+}
+.history {
+    background-image: url('/image/History.jpg');
+    background-size: cover;
+    padding: 15rem 1rem 2rem 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    break-inside: avoid-column;
+    text-align: left;
+}
+.com {
+    margin-bottom: -3rem;
+}
+.join-us {
+    /* column-rule: 2px solid #658864; */
+    columns: 2 350px;
+    margin: 5rem;
+    column-gap: 8em; 
+}
+.join {
+    background-image: url('/image/Join.jpg');
+    /* background-position: center; */
+    background-size: cover;
+    padding: 25rem 3rem 2rem 2rem;
+    background-repeat: no-repeat;
+    color: white;
+    break-inside: avoid-column;
+    text-align: left;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 0 black;
+}
+
+.supply {
+    background-image: url('/image/Supli.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 24rem 3rem 2rem 2rem;
+    background-repeat: no-repeat;
+    color: white;
+    break-inside: avoid-column;
+    text-align: left;
+    width: 400px;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 0 black; 
+}
+footer{
+    background-color: #658864;
+    color: white;
+    text-align: center;
+   
+}
+.noc {
+  text-align: center;
+ 
+}
+/* contact-us */
+.cont{
+    background-image: linear-gradient(to right, #658864, white);
+    margin: 4rem 2rem 2rem 2rem ;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 25px 0 black;
+    align-items: center;
+    width:min-content;
+    break-inside: avoid-column;
+}
+input{
+    width: 25rem;
+    height: 2rem;
+    border-bottom: #658864 solid;
+    border-radius: 5px;
+}
+ 
+ .contact-body {
+    columns: 2 350px;
+    column-gap: 2em;
+    margin: 5rem 2rem 4rem 2rem;
+ }
+ .lorem {
+   padding-top: 5rem;
+   /* font-weight: 900; */
+ }
+ .lorem div {
+  text-transform: capitalize;
+  text-align: left;
+  padding-top: 2rem;
+ }
+
+.address {
+    margin-top: -2.2rem;
+    background-color: #658864;
+
+}
+.address {
+    text-align: center;
+}
+contact-form{
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+    width: fit-content;
+}
+.but {
+    padding: .5em;
+    font-size: .7em;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000000;
+}
+.but:hover{
+    background-color: #B7B78A;
+    color: #fff;
+    border: #fff solid;
+    box-shadow: 0 0 25px 0 black;
+}
+
+/* contact Us End */
+.foot a {
+    color: white;
+    font-size: small;
+    font-weight: lighter;
+}
+.noc{
+    background-image: url('/image/NOC.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 500px;
+}
+.noc-txt  {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 150%;
+    text-align: center;
+    padding: 7.2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.603);
+}
+  /* About Page */  
+.aboutpage {
+margin: 8rem 5rem 0 5rem;
+text-align: justify;
+}
+.career-path {
+    background-image: url(/image/Career.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+}
+.Career-head {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 250%;
+        text-align: justify;
+        padding: 2em;
+        color: white;
+        margin-bottom: -2rem;
+        font-weight: bolder;
+        font-size: 3rem;
+        text-transform: capitalize;
+    }
+.Career-para {
+    background-color: rgba(0, 0, 0, 0.307);
+    color: #fff;
+    margin: 0rem 30rem 0 2rem;
+    padding:1rem;
+    font-weight: bold;
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.headabout {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: 100%;
+}
+
+.Team {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center;
+    flex-flow: row wrap;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+    scroll-margin-top: 8rem;
+    width: min(100%, 350px);
+    background-color: #e7e7d3;
+    border: 2px solid #658864;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card figure {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.card img {
+    border: 5px double #658864;
+    border-radius: 50%;
+}
+.card figcaption {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin:1rem;
+    text-align: center;
+}
+p, q {
+    text-decoration: none;
+    padding: 0%;
+    margin-top: -1rem;
+}
+html {
+    scroll-behavior: smooth;
+}
+.Obas {
+ border:2px solid #658864;
+ border-radius: 2%;
+ float: left;
+ margin: 1em;
+ display: block;
+    max-width: 100%;
+    height: 100%;
+    background-color: #e7e7d3;;
+    padding: 1em;
+    font-size: larger;
+    font-weight: bolder;
+    box-shadow: 0 0 25px 0 black;
+}
+.Obas img{
+    border-radius: 100%;
+    float: left;
+}
+
+.president {
+    text-align: justify;
+    padding: 2rem;
+    margin: 0 1rem 1rem 0rem;
+    display: flex;
+    
+}
+.ceo h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+details p {
+    padding-top: 1rem;
+}
+.executive {
+    text-align: center;
+    text-decoration: overline;
+    text-transform: capitalize;
+    padding-top: 2rem;
+}
+/* Solution page */
+.business {
+        margin:7rem 2rem 2rem 2rem ; 
+    }
+    .business h1{
+        text-align: center;
+    }
+
+    .colocation, .Lease, .billborad {
+        display: flex;
+        column-rule: 2px solid #000000;
+    columns: 2 350px;
+    column-gap: 2em;
+    padding: 2rem;
+    }
+    .sol img {
+        width: 250px; height: 250px;
+    }
+    .business img{
+        float: left;
+        padding: 1em ;
+        border-radius: 25px;
+        
+    }
+    .business h2, h4{
+        text-align: left;
+        text-transform: capitalize;
+    }
+    .business h4{
+        text-transform: capitalize;
+        padding: -1rem;
+        text-align: right;
+    }
+    .business, p{
+        padding-top: 1rem;
+        text-align: justify;
+    }
+    .oper {
+    background-image: url('/image/operational.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    }
+    .oper-head {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 250%;
+        text-align: justify;
+        padding: 2em;
+        color: white;
+        margin-bottom: -2rem;
+        font-weight: bolder;
+        font-size: 3rem;
+    }
+    .oper-para {
+     background-color: rgba(0, 0, 0, 0.865);
+     color: #fff;
+     margin: 0rem 30rem 0 2rem;
+     padding:1rem;
+     font-weight: bolder;
+    }
+
+/* About Page-end */
